@@ -11,7 +11,7 @@ const Navigation = () => {
 
   return (
     <>
-      <section className="p-6 ">
+      <section className="p-6 relative ">
         <div className="flex flex-row">
           {/* Hamburger icon */}
           {!isOpen && (
@@ -104,6 +104,7 @@ const Navigation = () => {
             </div>
           </div>
         </div>
+
         {isOpen ? (
           <div>
             <SideBar />
