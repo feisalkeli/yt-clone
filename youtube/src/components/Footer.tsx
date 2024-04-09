@@ -1,7 +1,13 @@
 import React from "react";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="flex justify-center items-center">
+      <p>Copyright &copy; {currentYear}</p>
+    </footer>
+  );
 };
 
 export default Footer;

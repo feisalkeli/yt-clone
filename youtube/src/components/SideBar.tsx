@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const SideBar = () => {
   return (
     <div
-      className={` text-black  w-64 flex h-96  mt-4 border-dashed border-red-600 `}
+      className={` text-black  w-64 flex h-96  mt-4 border-dashed border-red-600 absolute `}
     >
       <ul className="flex flex-col items-center ">
         <div className="flex  flex-row gap-2 justify-center items-center cursor-pointer hover:underline mb-10">

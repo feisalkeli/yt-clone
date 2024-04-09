@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+# Ignore virtual environment
+myenv/
+
+# Ignore pipenv and pipfiles
+Pipfile
+Pipfile.lock
