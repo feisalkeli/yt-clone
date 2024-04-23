@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <Box sx={{}}>
+      <Box sx={{ background: "#000000" }}>
         <Navbar />
 
         <Routes>
