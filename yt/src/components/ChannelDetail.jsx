@@ -1,7 +1,3 @@
-/**
- * The ChannelDetail function is a React component that renders a div with the text "ChannelDetail".
- * @returns A `<div>` element with the text "ChannelDetail" inside is being returned.
- */
 import React from "react";
 
 import { useState, useEffect } from "react";
@@ -48,8 +44,21 @@ const ChannelDetail = () => {
           zIndex: 10,
           height: "300px",
         }}
+      ></Box>
+      <ChannelCard channelDetail={channelDetail} marginTop="-113px" />
+
+      {/* Center the videos horizontally */}
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        p="2"
+        sx={{ sm: { marginLeft: "12px" } }}
       >
-        <ChannelCard channelDetail={channelDetail} />
+        <Box sx={{ maxWidth: "800px", sm: { marginLeft: "12px" } }}>
+          {" "}
+          <Videos videos={videos} />
+        </Box>
       </Box>
     </Box>
   );
