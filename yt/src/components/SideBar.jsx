@@ -13,35 +13,36 @@ const SideBar = ({ selectedCategory, setSelectedCategory }) => {
           mt: {},
         }}
       >
-        {categories.map((category) => (
-          <button
-            className="category-btn "
-            style={{
-              background: category.name === selectedCategory && "#FC1503",
-              color: "white",
-            }}
-            key={category.name}
-            onClick={() => {
-              setSelectedCategory(category.name);
-            }}
-          >
-            <span
+        {categories &&
+          categories.map((category) => (
+            <button
+              className="category-btn "
               style={{
-                color: category.name === selectedCategory ? "white" : "red",
-                marginRight: "15px",
+                background: category.name === selectedCategory && "#FC1503",
+                color: "white",
+              }}
+              key={category.name}
+              onClick={() => {
+                setSelectedCategory(category.name);
               }}
             >
-              {category.icon}
-            </span>
-            <span
-              style={{
-                opacity: category.name === selectedCategory ? "1" : "0.8",
-              }}
-            >
-              {category.name}
-            </span>
-          </button>
-        ))}
+              <span
+                style={{
+                  color: category.name === selectedCategory ? "white" : "red",
+                  marginRight: "15px",
+                }}
+              >
+                {category.icon}
+              </span>
+              <span
+                style={{
+                  opacity: category.name === selectedCategory ? "1" : "0.8",
+                }}
+              >
+                {category.name}
+              </span>
+            </button>
+          ))}
       </Stack>
     </>
   );
