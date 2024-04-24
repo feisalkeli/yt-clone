@@ -14,6 +14,9 @@ const SearchBar = () => {
         border: "1px solid #e3e3",
         boxShadow: "none",
         mr: { sm: 5 },
+        flex: "row",
+        justifyContent: "center",
+        alignItems: "center",
       }}
       onSubmit={() => {}}
     >
