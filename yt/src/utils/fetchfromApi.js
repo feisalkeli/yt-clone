@@ -15,7 +15,9 @@ export const fetchFromApi = async (endpoint, params) => {
   const options = {
     ...defaultOptions,
     url: `${BASE_URL}/${endpoint}`,
-    params,
+    params: {
+      maxResults: "50",
+    },
   };
 
   try {
