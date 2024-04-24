@@ -1,4 +1,4 @@
-import { Paper, Icon, IconButton } from "@mui/material";
+import { Paper, IconButton } from "@mui/material";
 import { Search } from "@mui/icons-material";
 
 import { useState } from "react";

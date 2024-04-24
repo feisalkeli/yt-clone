@@ -1,3 +1,4 @@
+/* This code snippet is a React component called `ChannelDetail`. Here's a breakdown of what it does: */
 import React from "react";
 
 import { useState, useEffect } from "react";
